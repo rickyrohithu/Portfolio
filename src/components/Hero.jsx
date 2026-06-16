@@ -161,7 +161,7 @@ export default function Hero() {
 
       <div className="hero-content">
         <h1 className="hero-heading">
-          <span className="hero-line">I'm Rohith Somireddy,</span>
+          <span className="hero-line">Hi,I'm Rohith Somireddy,</span>
           <br />
           <span className="hero-line">a Software </span>
           <span className="hero-highlight">Developer</span>
