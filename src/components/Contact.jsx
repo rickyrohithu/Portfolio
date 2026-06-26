@@ -51,7 +51,7 @@ export default function Contact() {
         <footer className="pt-8 border-t border-dark-border/50">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-600">
-              © 2026 Somireddy Rohith Reddy. All rights reserved.
+              © 2025 [Somireddy Rohith Reddy All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               {[

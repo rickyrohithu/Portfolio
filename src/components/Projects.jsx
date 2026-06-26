@@ -26,12 +26,12 @@ const projects = [
   //   github: 'https://github.com/placeholder',
   //   demo: null,
   // },
-  // {
-  //   title: 'Persona-Driven Document Intelligence',
-  //   description: 'Full-stack AI app generating persona-tailored document summaries with FastAPI, React, and Google Gemini API — reduces processing time by 60%.',
-  //   github: 'https://github.com/placeholder',
-  //   demo: 'https://demo.placeholder.com',
-  // },
+   {
+   title: 'Saree business Academy',
+    description: 'Full-stack portal featuring secure role-based portals, registration workflows, and automated PDF certificate delivery using Next.js and Prisma — reduces delivery wait time by 95%',
+     github: 'https://github.com/sai-saree/saree-pre-pleating-portfolio',
+     demo: 'https://sai-saree-pre-pleating.vercel.app/',
+   },
   {
     title: 'Personal Portfolio',
     description: 'This portfolio! Modern SPA built with React and Tailwind CSS featuring smooth scroll, typewriter animations, and dark/light theme support.',
