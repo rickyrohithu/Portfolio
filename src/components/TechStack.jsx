@@ -28,7 +28,7 @@ export default function TechStack() {
 
   // Split into three distinct lines to match the beautiful Hero section text layout
   const lines = [
-    ['Using', 'these', 'latest', 'technologies,'],
+    ['Using', 'the', 'technologies,','I','Love','the','most'],
     ['I', 'developed'],
     ['things', 'like...']
   ];
