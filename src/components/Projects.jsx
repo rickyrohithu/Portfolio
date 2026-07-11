@@ -3,6 +3,12 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
   {
+    title: 'Instalearn',
+    description: 'Developed a premium full-stack learning platform using Next.js and MongoDB with role-based Student/Trainer portals, AWS S3 file hosting, Razorpay payment gateway with EMI management, and automated certificate generation.',
+    github: 'https://github.com/rickyrohithu/instalearn',
+    demo: 'https://instalearn-tawny.vercel.app/',
+  },
+  {
     title: 'Attendance Manager Bot',
     description: 'Developed a fully automated Python-based system using Selenium to track attendance and send real-time absence alerts via Telegram and WhatsApp, scheduled daily with cron for zero manual effort.',
     github: 'https://github.com/rickyrohithu/attendance-bot-vmeg',
@@ -86,10 +92,12 @@ function ProjectCard({ project, index }) {
       </h3>
       <p className="text-sm leading-relaxed mb-6 text-gray-400">{project.description}</p>
       <div className="flex gap-3 mt-auto">
-        <a href={project.github} target="_blank" rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border border-dark-border text-gray-300 hover:border-accent hover:text-accent transition-all duration-500 ease-out hover:scale-105">
-          <FiGithub size={14} /> Github
-        </a>
+        {project.github && project.github !== 'null' && project.github !== '#' && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border border-dark-border text-gray-300 hover:border-accent hover:text-accent transition-all duration-500 ease-out hover:scale-105">
+            <FiGithub size={14} /> Github
+          </a>
+        )}
         {project.demo && (
           <a href={project.demo} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border border-dark-border text-gray-300 hover:border-accent hover:text-accent transition-all duration-500 ease-out hover:scale-105">
