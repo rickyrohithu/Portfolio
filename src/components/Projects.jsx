@@ -14,12 +14,6 @@ const projects = [
     github: 'https://github.com/rickyrohithu/attendance-bot-vmeg',
     // demo: 'https://demo.placeholder.com',
   },
-  {
-    title: 'Toon Optimiser',
-    description: 'Developed a full-stack GenAI application to optimize LLM token usage using TOON format, reducing costs by up to 52% with robust testing, secure APIs, and reliable JSON-to-TOON conversion.',
-    github: 'null',
-    demo: null,
-  },
   // {
   //   title: 'Fake News Detection',
   //   description: 'ML-powered classifier for news articles using NLP and TF-IDF vectorization with Passive Aggressive Classifier, achieving 93.6% accuracy on 40k+ articles.',
@@ -32,12 +26,12 @@ const projects = [
   //   github: 'https://github.com/placeholder',
   //   demo: null,
   // },
-   {
-   title: 'Saree business Academy',
+  {
+    title: 'Saree business Academy',
     description: 'Full-stack portal featuring secure role-based portals, registration workflows, and automated PDF certificate delivery using Next.js and Prisma — reduces delivery wait time by 95%',
-     github: 'https://github.com/sai-saree/saree-pre-pleating-portfolio',
-     demo: 'https://sai-saree-pre-pleating.vercel.app/',
-   },
+    github: 'https://github.com/sai-saree/saree-pre-pleating-portfolio',
+    demo: 'https://sai-saree-pre-pleating.vercel.app/',
+  },
   {
     title: 'Personal Portfolio',
     description: 'This portfolio! Modern SPA built with React and Tailwind CSS featuring smooth scroll, typewriter animations, and dark/light theme support.',

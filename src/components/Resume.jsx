@@ -1,16 +1,6 @@
 import { FiExternalLink, FiBriefcase, FiCode } from 'react-icons/fi';
 
 const experiences = [
-  {
-    role: 'Backend Developer Intern',
-    company: 'Ruxstar',
-    period: 'June 2026 — Present',
-    points: [
-      'Built RESTful APIs with Node.js and Express, serving 10k+ daily requests',
-      // 'Implemented CI/CD pipelines reducing deployment time by 40%',
-      'Collaborated with cross-functional teams on microservices architecture',
-    ],
-  },
   // {
   //   role: 'Open Source Contributor',
   //   company: 'Various Projects',
