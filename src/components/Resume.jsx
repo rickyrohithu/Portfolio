@@ -23,7 +23,7 @@ export default function Resume() {
           </h2>
           <p className="mt-4 text-lg text-gray-400">Experience & qualifications</p>
           <a
-            href="https://drive.google.com/file/d/1_cohDQ0Kv_IpFwHB1cxUARa5wep7cSdq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WCry5fXzg663U65PA-KNvFE-qzsNrfNU/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-full text-sm font-medium border border-accent/50 text-accent transition-all duration-500 ease-out hover:bg-accent/10 hover:scale-105"
