@@ -3,6 +3,11 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
   {
+    title: 'Milk basket',
+    'Engineered a comprehensive dairy distribution API using Node.js and PostgreSQL with role-based authentication, real-time milk stock management, multi-stage order tracking (Pending to Collected), and an integrated notification engine.', 
+github: 'https://github.com/rickyrohithu/milk-basket',
+  }
+  {
     title: 'Instalearn',
     description: 'Developed a premium full-stack learning platform using Next.js and MongoDB with role-based Student/Trainer portals, AWS S3 file hosting, Razorpay payment gateway with EMI management, and automated certificate generation.',
     github: 'https://github.com/rickyrohithu/instalearn',

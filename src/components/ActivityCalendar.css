@@ -1,0 +1,62 @@
+/* src/components/ActivityCalendar.css */
+
+.activity-calendar {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  scrollbar-width: thin;
+}
+
+.activity-calendar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.activity-calendar::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 2px;
+}
+
+.week-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.day-cell {
+  width: 9px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 2px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.day-cell:hover {
+  transform: scale(1.4);
+  z-index: 10;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Themes for active days */
+.day-cell.active.theme-github {
+  background-color: #10b981; /* Emerald Green */
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+  border: none;
+}
+
+.day-cell.active.theme-codeforces {
+  background-color: #3b82f6; /* Codeforces Blue */
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+  border: none;
+}
+
+.day-cell.active.theme-leetcode {
+  background-color: #ffa116; /* LeetCode Orange */
+  box-shadow: 0 0 8px rgba(255, 161, 22, 0.6);
+  border: none;
+}

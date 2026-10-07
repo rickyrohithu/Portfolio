@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import useStats from '../hooks/useStats';
+import ActivityCalendar from './ActivityCalendar';
 
 const rotatingTexts = [
   { text: "builds robust\nAPI services.", highlight: "API" },
@@ -8,6 +10,7 @@ const rotatingTexts = [
 ];
 
 export default function Hero() {
+  const { stats, loading, error } = useStats();
   const [currentIdx, setCurrentIdx] = useState(0);
   const [cursorVisible, setCursorVisible] = useState(true);
   const heroRef = useRef(null);
@@ -159,22 +162,59 @@ export default function Hero() {
         />
       </div>
 
-      <div className="hero-content">
-        <h1 className="hero-heading">
-          <span className="hero-line">Hi,I'm Rohith Somireddy,</span>
-          <br />
-          <span className="hero-line">a Software </span>
-          <span className="hero-highlight">Developer</span>
-          <br />
-          {renderDynamicText()}
-          <span
-            className="hero-cursor"
-            style={{ opacity: cursorVisible ? 1 : 0 }}
-          >
-            |
-          </span>
-        </h1>
-      </div>
+        <div className="hero-content">
+          <h1 className="hero-heading">
+            <span className="hero-line">Hi,I'm Rohith Somireddy,</span>
+            <br />
+            <span className="hero-line">a Software </span>
+            <span className="hero-highlight">Developer</span>
+            <br />
+            {renderDynamicText()}
+            <span className="hero-cursor" style={{ opacity: cursorVisible ? 1 : 0 }}>|</span>
+          </h1>
+        </div>
+        {/* Stats section */}
+        <div className="hero-stats">
+          {loading ? (
+            <div className="stats-loading">
+              <div className="stats-spinner"></div>
+              <p className="loading-text">Retrieving real-time developer stats...</p>
+            </div>
+          ) : error ? (
+            <div className="stats-error">
+              <p className="error-text">Unable to load developer stats. Please check your network connection.</p>
+            </div>
+          ) : (
+            <div className="stats-grid">
+              <div className="stats-card">
+                <div className="stats-header">
+                  <span className="stats-title-github">GitHub</span>
+                  <span className="stats-badge github">{stats.github.openPRs} PRs</span>
+                </div>
+                <ActivityCalendar activeDates={stats.github.activeDates || []} theme="github" />
+                <p className="stats-meta">{stats.github.activeDays} active days last year</p>
+              </div>
+
+              <div className="stats-card">
+                <div className="stats-header">
+                  <span className="stats-title-codeforces">Codeforces</span>
+                  <span className="stats-badge codeforces">{stats.codeforces.solvedLastYear} solved</span>
+                </div>
+                <ActivityCalendar activeDates={stats.codeforces.activeDates || []} theme="codeforces" />
+                <p className="stats-meta">{stats.codeforces.activeDays} active days last year</p>
+              </div>
+
+              <div className="stats-card">
+                <div className="stats-header">
+                  <span className="stats-title-leetcode">LeetCode</span>
+                  <span className="stats-badge leetcode">{stats.leetcode.solvedLastYear} solved</span>
+                </div>
+                <ActivityCalendar activeDates={stats.leetcode.activeDates || []} theme="leetcode" />
+                <p className="stats-meta">{stats.leetcode.activeDays} active days last year</p>
+              </div>
+            </div>
+          )}
+        </div>
 
       {/* Scroll indicator */}
       <div className="hero-scroll-indicator">
