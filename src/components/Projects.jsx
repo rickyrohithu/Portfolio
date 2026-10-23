@@ -4,8 +4,8 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 const projects = [
   {
     title: 'Milk basket',
-    description:'Engineered a comprehensive dairy distribution API using Node.js and PostgreSQL with role-based authentication, real-time milk stock management, multi-stage order tracking (Pending to Collected), and an integrated notification engine.', 
-    github:'https://github.com/rickyrohithu/milk-basket',
+    description: 'Engineered a comprehensive dairy distribution API using Node.js and PostgreSQL with role-based authentication, real-time milk stock management, multi-stage order tracking (Pending to Collected), and an integrated notification engine.',
+    github: 'https://github.com/rickyrohithu/milk-basket',
   },
   {
     title: 'Instalearn',
@@ -19,12 +19,12 @@ const projects = [
     github: 'https://github.com/rickyrohithu/attendance-bot-vmeg',
     // demo: 'https://demo.placeholder.com',
   },
-  // {
-  //   title: 'Fake News Detection',
-  //   description: 'ML-powered classifier for news articles using NLP and TF-IDF vectorization with Passive Aggressive Classifier, achieving 93.6% accuracy on 40k+ articles.',
-  //   github: 'https://github.com/placeholder',
-  //   // demo: 'https://demo.placeholder.com',
-  // },
+  {
+    title: 'Tooken Optimiser',
+    description: 'Lexa Studio is a full-stack JSON-to-TOON benchmarking tool built with React, Node.js, Express, Gemini, WebSockets, LangSmith, and Tiktoken to analyze token usage and reduce LLM API costs.',
+    github: 'https://github.com/rickyrohithu/Tooken-Optimiser',
+    //   // demo: 'https://demo.placeholder.com',
+  },
   // {
   //   title: 'PDF Outline Extractor',
   //   description: 'Python CLI tool that extracts table-of-contents outlines from PDFs, supports nested bookmarks, and exports to JSON/Markdown for 500+ page documents.',
